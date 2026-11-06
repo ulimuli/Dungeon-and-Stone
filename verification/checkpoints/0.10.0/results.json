@@ -1,0 +1,512 @@
+{
+  "game": "Dungeon & Stone",
+  "scope": "automated rules and scene input; not human playtesting or campaign completion",
+  "all_passed": true,
+  "suites": [
+    {
+      "suite": "content",
+      "passed": true,
+      "seconds": 0.41,
+      "summary": "CONTENT TEST: 219 checks; 0 failures; 8 spawnable species; 5 obtainable essences",
+      "checks": 219,
+      "failures": 0
+    },
+    {
+      "suite": "reference_content",
+      "passed": true,
+      "seconds": 0.31,
+      "summary": "REFERENCE CONTENT TEST: 83 checks; 0 failures; 9 researched essences; 5 researched areas",
+      "checks": 83,
+      "failures": 0
+    },
+    {
+      "suite": "character_art",
+      "passed": true,
+      "seconds": 1.21,
+      "summary": "CHARACTER_ART_TEST: 437 checks; 0 failures; contact sheet /Users/lukastroger/Documents/Codex/2026-11-02/al/outputs/dungeon-and-stone/verification/character-art-contact-sheet.png",
+      "checks": 437,
+      "failures": 0
+    },
+    {
+      "suite": "city_life",
+      "passed": true,
+      "seconds": 1.35,
+      "summary": "CITY LIFE: 336 checks, 0 failures. Service routing, generated identities and deterministic provisional appearances.",
+      "checks": 336,
+      "failures": 0
+    },
+    {
+      "suite": "city_simulation",
+      "passed": true,
+      "seconds": 1.54,
+      "summary": "CITY SIMULATION: 160 checks, 0 failures. Actual wrappers/services, generated recruitment routing and cosmetic persistence. No player save slots used.",
+      "checks": 160,
+      "failures": 0
+    },
+    {
+      "suite": "reference",
+      "passed": true,
+      "seconds": 2.91,
+      "summary": "REFERENCE RULES: 249 checks, 0 failures. Runtime coverage uses assisted fixtures; combat numbers and geography remain provisional.",
+      "checks": 249,
+      "failures": 0
+    },
+    {
+      "suite": "combat_rules",
+      "passed": true,
+      "seconds": 1.56,
+      "summary": "COMBAT RULES: 46 checks, 0 failures. Current numerical algorithms and interactions; combat coefficients remain provisional. No save files used.",
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "suite": "essence_lifetime",
+      "passed": true,
+      "seconds": 2.53,
+      "summary": "ESSENCE LIFETIME: 36 checks, 0 failures. Thirty-minute lifetimes on a minute-resolution simulation clock; fixtures isolate rules, not balance.",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "suite": "world",
+      "passed": true,
+      "seconds": 54.82,
+      "summary": "WORLD/SAVE TESTS: 4830 checks, 0 failures; 800 maps across Crystal Cave, Goblin Forest, Land of the Dead and Black Rock Mountain",
+      "checks": 4830,
+      "failures": 0
+    },
+    {
+      "suite": "progression_magic",
+      "passed": true,
+      "seconds": 2.8,
+      "summary": "PROGRESSION / MAGIC: 127 checks, 0 failures. Assisted arenas/XP boundaries; actual recruitment, kills, casts, rounds and JSON restore.",
+      "checks": 127,
+      "failures": 0
+    },
+    {
+      "suite": "save_validation",
+      "passed": true,
+      "seconds": 19.58,
+      "summary": "SAVE VALIDATION: 701 checks, 0 failures; encoded/decoded real snapshots, malformed structure, IDs, maps, nested tags and nonmutation. No save files written.",
+      "checks": 701,
+      "failures": 0
+    },
+    {
+      "suite": "campaign_persistence",
+      "passed": true,
+      "seconds": 2.51,
+      "summary": "CAMPAIGN PERSISTENCE: 55 checks, 0 failures. Checksum-valid structural corruption, healthy backup preservation, atomic refusal and rejected-restore RNG conservation; slot 97 restored.",
+      "checks": 55,
+      "failures": 0
+    },
+    {
+      "suite": "settings_validation",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "SETTINGS VALIDATION TEST: 126 checks; 0 failures",
+      "checks": 126,
+      "failures": 0
+    },
+    {
+      "suite": "adventurer_generation",
+      "passed": true,
+      "seconds": 0.78,
+      "summary": "ADVENTURER GENERATION: 512 checks, 0 failures. Twelve persistent generated identities, two per race; cosmetic RNG only. No player saves used.",
+      "checks": 512,
+      "failures": 0
+    },
+    {
+      "suite": "companion_identity",
+      "passed": true,
+      "seconds": 5.26,
+      "summary": "COMPANION IDENTITY TEST: 1451 checks; 0 failures. Generated campaign/city/recruit identities, JSON saves, death and mage restrictions; assisted fixtures, no player saves.",
+      "checks": 1451,
+      "failures": 0
+    },
+    {
+      "suite": "essence_preservation",
+      "passed": true,
+      "seconds": 4.19,
+      "summary": "ESSENCE PRESERVATION: 167 checks, 0 failures. Assisted rule fixtures, actual recruitment/shop/sealing/absorption/storage/selling/JSON restore; no normal save files written.",
+      "checks": 167,
+      "failures": 0
+    },
+    {
+      "suite": "clock_progression",
+      "passed": true,
+      "seconds": 3.71,
+      "summary": "CLOCK PROGRESSION: 110 checks, 0 failures. Actual action/camp/food/portal rules and schema2-to3 JSON migration; grid timing is estimated, no human balance claim.",
+      "checks": 110,
+      "failures": 0
+    },
+    {
+      "suite": "expanded_essence",
+      "passed": true,
+      "seconds": 2.24,
+      "summary": "EXPANDED ESSENCES: 114 checks, 0 failures. Partial sourced components; grid timings/range/drop estimate are not canonical coefficients. Assisted fixtures, no player saves.",
+      "checks": 114,
+      "failures": 0
+    },
+    {
+      "suite": "racial_rules",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "RACIAL RULES TEST: 168 checks; 0 failures. Purchased Undying1 only; not six complete racial trees.",
+      "checks": 168,
+      "failures": 0
+    },
+    {
+      "suite": "racial_integration",
+      "passed": true,
+      "seconds": 1.46,
+      "summary": "RACIAL INTEGRATION: 33 checks, 0 failures. Actual city fee, recovery, race guards, JSON and bench persistence; numerical conversion is provisional.",
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "suite": "dungeon_width",
+      "passed": true,
+      "seconds": 8.88,
+      "summary": "DUNGEON WIDTH: 406 checks, 0 failures;80 seeded wide-route maps,3x3 footprint connectivity and legacy/large saves.",
+      "checks": 406,
+      "failures": 0
+    },
+    {
+      "suite": "audio_lifecycle",
+      "passed": true,
+      "seconds": 0.7,
+      "summary": "AUDIO LIFECYCLE: 6 checks, 0 failures. Actual local playback/crossfade shutdown; silence via zero volume, no settings or save writes.",
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "turn_safety",
+      "passed": true,
+      "seconds": 2.39,
+      "summary": "TURN SAFETY: 45 checks, 0 failures. Guard/incapacitation, stationary enemy field and life-state save invariants; assisted arenas.",
+      "checks": 45,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_rules",
+      "passed": true,
+      "seconds": 0.57,
+      "summary": "NUMBERED RULES TEST: 42 checks; 0 failures.",
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_catalog",
+      "passed": true,
+      "seconds": 1.94,
+      "summary": "NUMBERED CATALOG: 75 checks, 0 failures. 3 bundled researched definitions; 1000 synthetic rows test validator capacity only.",
+      "checks": 75,
+      "failures": 0
+    },
+    {
+      "suite": "beastman_progression",
+      "passed": true,
+      "seconds": 2.62,
+      "summary": "BEASTMAN PROGRESSION: 244 checks, 0 failures. Actual purchase, absorption, sealing, destructive ritual, attacks and JSON/bench persistence; assisted funds/drops/level; numeric estimates remain provisional.",
+      "checks": 244,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_integration",
+      "passed": true,
+      "seconds": 4.1,
+      "summary": "NUMBERED / FEAR INTEGRATION: 221 checks, 0 failures. Assisted funds/arenas; actual market, gear, hits, protection, knockback, technique routing, transfer, JSON/bench persistence and innate fear. Numerical coefficients remain provisional.",
+      "checks": 221,
+      "failures": 0
+    },
+    {
+      "suite": "profession_rules",
+      "passed": true,
+      "seconds": 0.5,
+      "summary": "PROFESSION RULES TEST: 175 checks; 0 failures. Basic human magic entry only; other careers remain unsupported.",
+      "checks": 175,
+      "failures": 0
+    },
+    {
+      "suite": "profession_integration",
+      "passed": true,
+      "seconds": 2.44,
+      "summary": "PROFESSION INTEGRATION: 223 checks, 0 failures. Actual assessment, tuition, spell use and JSON/bench persistence; assisted funding/aptitude seeds; basic Human magic only.",
+      "checks": 223,
+      "failures": 0
+    },
+    {
+      "suite": "stat_catalog",
+      "passed": true,
+      "seconds": 0.69,
+      "summary": "STAT CATALOG: 521 checks, 0 failures. All102 declared stats have live consumers or informational indices; verified relationships and provisional qualitative/numerical interpretations are disclosed separately.",
+      "checks": 521,
+      "failures": 0
+    },
+    {
+      "suite": "stat_rules",
+      "passed": true,
+      "seconds": 0.5,
+      "summary": "STAT RULES: 93 checks, 0 failures. Generic fixture registry; stacking is an explicit implementation rule.",
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "suite": "stat_integration",
+      "passed": true,
+      "seconds": 2.43,
+      "summary": "STAT INTEGRATION: 121 checks, 0 failures. Artificial modifiers verify consumers; coefficients remain explicit reconstruction rules.",
+      "checks": 121,
+      "failures": 0
+    },
+    {
+      "suite": "stat_combat_rules",
+      "passed": true,
+      "seconds": 0.52,
+      "summary": "STAT COMBAT RULES: 160 checks, 0 failures. Point conversions and critical eligibility are reconstruction estimates.",
+      "checks": 160,
+      "failures": 0
+    },
+    {
+      "suite": "stat_physiology",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "STAT PHYSIOLOGY: 170 checks, 0 failures. Pure helpers; provisional qualitative effects and numerical coefficients are explicit; context helpers grant no spirit acquisition.",
+      "checks": 170,
+      "failures": 0
+    },
+    {
+      "suite": "stat_mental_rules",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "STAT MENTAL RULES: 192 checks, 0 failures. Confirmed and provisional effects labeled separately; numerical curves are estimates. No save files used.",
+      "checks": 192,
+      "failures": 0
+    },
+    {
+      "suite": "stat_expansion",
+      "passed": true,
+      "seconds": 3.31,
+      "summary": "STAT EXPANSION: 112 checks, 0 failures. Synthetic fixtures verify combat, resources and evidence-based awareness; coefficients remain estimates.",
+      "checks": 112,
+      "failures": 0
+    },
+    {
+      "suite": "stat_indices",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "STAT INDICES: 111 checks, 0 failures. Informational estimated summaries only; source-verified coefficients are labeled separately.",
+      "checks": 111,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_rules",
+      "passed": true,
+      "seconds": 1.66,
+      "summary": "SPIRIT RULES: 62 checks, 0 failures. Contract lesson and all numerical conversions remain explicit reconstruction choices.",
+      "checks": 62,
+      "failures": 0
+    },
+    {
+      "suite": "stat_remaining_integration",
+      "passed": true,
+      "seconds": 2.82,
+      "summary": "REMAINING STATS: 71 checks, 0 failures. Actual consumers and persistence under assisted fixtures; provisional mechanics are not novel-exact rules.",
+      "checks": 71,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_stones",
+      "passed": true,
+      "seconds": 1.48,
+      "summary": "SPIRIT STONES: 104 checks, 0 failures. Pure contract/guidance rules; actual market/combat integration is covered separately; Wind scope, compressed price and guidance coefficients are explicit reconstruction choices.",
+      "checks": 104,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_stone_integration",
+      "passed": true,
+      "seconds": 2.43,
+      "summary": "SPIRIT STONE INTEGRATION: 138 checks, 0 failures. Actual market, commands, combat, clock and save validation exercised; funds and seed selection are explicit test assistance.",
+      "checks": 138,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_catalog",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "HOMELAND CATALOG: 289 checks, 0 failures. Six sourced/provisionally staged locations,36 authored points; existing commands own all progression.",
+      "checks": 289,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_rules",
+      "passed": true,
+      "seconds": 1.46,
+      "summary": "HOMELAND RULES: 122 checks, 0 failures. Six catalog lands share actual campaign inventory, rites, services, actors and saves; visitor access/layouts/operators are reconstruction choices.",
+      "checks": 122,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_integration",
+      "passed": true,
+      "seconds": 3.21,
+      "summary": "HOMELAND INTEGRATION: 319 checks, 0 failures. Real city/home/expedition commands, dynamic walking routes, NPC rites and validated saves exercised.",
+      "checks": 319,
+      "failures": 0
+    },
+    {
+      "suite": "dragon_blessing_rules",
+      "passed": true,
+      "seconds": 0.49,
+      "summary": "DRAGON BLESSING RULES: 279 checks, 0 failures. Three sourced effects; provisional native rite access; atomic fee and no resource refill or RNG.",
+      "checks": 279,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_ceremonies",
+      "passed": true,
+      "seconds": 2.55,
+      "summary": "HOMELAND CEREMONIES: 194 checks, 0 failures. Actual one-time weapon exchange, three blessing effects, combat and JSON persistence; access/grid estimates explicit.",
+      "checks": 194,
+      "failures": 0,
+      "rerun_note": "Extended final test-only persistence cases rerun after full suite; gameplay unchanged."
+    },
+    {
+      "suite": "city_map",
+      "passed": true,
+      "seconds": 2.55,
+      "summary": "CITY MAP: 141 checks, 0 failures. Authored geometry and native mouse/key/controller events; no service simulation claims.",
+      "checks": 141,
+      "failures": 0
+    },
+    {
+      "suite": "ui_input",
+      "passed": true,
+      "seconds": 4.52,
+      "summary": "ACTUAL SCENE INPUT/LAYOUT: 36 checks, 0 failures. Parsed keyboard/mouse events and scene-tree geometry; not human or screenshot testing.",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "suite": "city_ui",
+      "passed": true,
+      "seconds": 4.79,
+      "summary": "ACTUAL CITY UI: 67 checks, 0 failures. Real parsed input, actual services and isolated slot98; no human playtest claim.",
+      "checks": 67,
+      "failures": 0
+    },
+    {
+      "suite": "magic_ui",
+      "passed": true,
+      "seconds": 3.68,
+      "summary": "MAGIC SCENE UI: 91 checks, 0 failures. Parsed keyboard/mouse, actual scene geometry and graphical targeting capture when available.",
+      "checks": 91,
+      "failures": 0
+    },
+    {
+      "suite": "preservation_ui",
+      "passed": true,
+      "seconds": 5.13,
+      "summary": "PRESERVATION SCENE UI: 155 checks, 0 failures. Actual parsed mouse/keyboard confirmation and recipient flow; assisted drop/supply fixtures, not a human playthrough.",
+      "checks": 155,
+      "failures": 0
+    },
+    {
+      "suite": "expansion_ui",
+      "passed": true,
+      "seconds": 5.22,
+      "summary": "EXPANSION SCENE UI: 29 checks, 0 failures. Parsed sanctuary/map controls and rendered expanded cave/golem; assisted fixtures.",
+      "checks": 29,
+      "failures": 0
+    },
+    {
+      "suite": "racial_ui",
+      "passed": true,
+      "seconds": 11.22,
+      "summary": "RACIAL SCENE UI: 246 checks, 0 failures. Parsed real market/equipment/seal/ritual/cancel/removal/fear/protection controls at100/120%; assisted funding and bound essence; slot99/settings restored.",
+      "checks": 246,
+      "failures": 0
+    },
+    {
+      "suite": "stat_ui",
+      "passed": true,
+      "seconds": 4.95,
+      "summary": "STAT SCENE UI: 91 checks, 0 failures. Actual STATS/toggle/hover/preview/equip controls at100/120%; assisted modifier fixture; all registered stats have consumers, with provisional effects disclosed; settings/slot99 restored.",
+      "checks": 91,
+      "failures": 0
+    },
+    {
+      "suite": "stat_senses_ui",
+      "passed": true,
+      "seconds": 3.43,
+      "summary": "STAT SENSES UI: 6 checks, 0 failures. Rendered anonymous sound/danger fixture at100/120%; no parsed input or human playthrough claim; no save/settings writes.",
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "stat_actions_ui",
+      "passed": true,
+      "seconds": 14.69,
+      "summary": "STAT ACTION UI: 189 checks, 0 failures. Actual jump targeting and spirit confirmation controls at100/120%; assisted modifier fixture; all registered stats have consumers, with provisional effects disclosed; settings/slot99 restored.",
+      "checks": 189,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_map",
+      "passed": true,
+      "seconds": 3.93,
+      "summary": "HOMELAND MAP: 3260 checks, 0 failures. Six connected authored layouts, exact catalog IDs, focused native input and optional rendered-frame capture.",
+      "checks": 3260,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_ui",
+      "passed": true,
+      "seconds": 66.72,
+      "summary": "HOMELAND UI: 1010 checks, 0 failures. Parsed six-land travel/walking/lore/ritual/actor/creation controls at100/120%; disk99 restore uses actual persistence API because UI exposes only player slots1\u20133. Assisted funding/actor/ring; settings/99 restored; player slots untouched.",
+      "checks": 1010,
+      "failures": 0
+    }
+  ],
+  "tested_runtime_sha256": {
+    "game/adventurer_names.gd": "aa611f530244ba5d2e25ee912c08b1621cac1eb1bef8f9897562a4d850421767",
+    "game/audio.gd": "bfd1f53b94be7a9f77f9042c35d792028b1a2fefb9e920fc834e45582ec423cf",
+    "game/character_art.gd": "139148eaded7ebcad3d74a4ca4f996beb101a28c25bd7c3c2a562660b2471375",
+    "game/city_life.gd": "eca6c6f7bc58b3f3bd919c70bfc81ab1f262d66d978b985a15975f058a729d27",
+    "game/city_map.gd": "117368329e77d026ef3e3043d503d85c575f7f0d419f6fc9497a264d806da8d1",
+    "game/coming_of_age_rules.gd": "4854ef4d66e5e66162f5cdde1b4760075837a8f4e6b846b5e08a445e8265b00a",
+    "game/content.gd": "3d288917c8fcd64b1911d52c82b83f3030e86a0d0f610370bc36e4f5ab3f8a98",
+    "game/content_manifest.json": "9b107e674e1056025d8acdbf76f2226597996d55b43d892984541a784ae4aeb8",
+    "game/content_reference.gd": "66854cda61aeb522f9432a7b01527e2a741fedeaa1c7e90a57df68347ac7d0a4",
+    "game/dragon_blessing_rules.gd": "eb640ad37cf8ebe12ad707c957db91ee1896c5cacfb8805363f9c4e9ec7488a4",
+    "game/homeland_catalog.gd": "5a4198557d2d0ce229cbf3501dde6765a7b4fddd384e306d8b2a3cf7b2e11036",
+    "game/homeland_map.gd": "509d74d093d928899e41274a1200c3b2c546cf613cee53627101b66bf432df1a",
+    "game/homeland_rules.gd": "5d00c9b59eca15a8eee2df7d175b709a08d0362f99e0145670a9b637481e6140",
+    "game/main.gd": "d1f1dfe2eb826b42427146fb3d9a55d7199a6752a0b603e358761eb191d52000",
+    "game/numbered_catalog.gd": "4af2afe3b6d15092ec14e39b6e5e166c69a9c3d0c9e5525de074a4fddbe8da9d",
+    "game/numbered_items.json": "abce861dd9a414f658ff07995e3bd3bf7c82b124fd7527a808d82f54bd906d25",
+    "game/numbered_rules.gd": "bd63699b57758bb7c5567e20ffbd7147403cd72dd7376c9f5e6ffe38d537210f",
+    "game/persistence.gd": "b934e5904d6d04b8f06c7be22fa8234c900aaf6340c1ba8e0c702acfdb321027",
+    "game/profession_rules.gd": "9441da361a2fb97f73dd8247defe30a75520d3b612bc0fbbd11cbfb12d40bc59",
+    "game/racial_rules.gd": "25232ed63e911cac730efac71279febc7ce189e28467afb23ca6e307e4721afb",
+    "game/recruitment.gd": "a36d36616b5486ecd70b26b6e633304d1f64b534f0d8afa9d4e5c047b85c9798",
+    "game/reference_runtime.gd": "6ffc2db697448b599faf1edd2d3afd68ed13d859fe2e83a3c080b59cda889aab",
+    "game/save_validation.gd": "ab790c5c0e974b7323f8fe673f78ec4e99499fe0fbdaea9df8a2a255e2f2ae0c",
+    "game/settings_validation.gd": "2e6a1c021d9ca4c1f2dbf921ce82501046d8f0212df9e4787922c4f21a90f8a0",
+    "game/simulation.gd": "91ffb8053b09038fc23a4cdc481534ddce0ef290d8bb97551cbc310a63278bcc",
+    "game/spirit_rules.gd": "b7978b63fa1637ef2f5802fdbcfe576881846f82f58cae6ec98dde48a4fe7e7e",
+    "game/spirit_stones.gd": "58e9c515057a2540e988a34b63ac53a2c44d049b4711404d70f22bee77a3e9fd",
+    "game/stat_awareness.gd": "8ca64fc9391399a3ca4293e272ca50a323720d0f7545f57c8cd232231ca50a4e",
+    "game/stat_catalog.gd": "98426b7a15d5581e2afdce56022dba43add6fbc5fae6652fd4f7570d1885e4bd",
+    "game/stat_combat_rules.gd": "22d6a5f946d5d15130af2560d00f3cb988da2c37ef2533717ae7e164810b30e6",
+    "game/stat_indices.gd": "2b56b1997921b531b1ca1acb59b8f2550e188d6d3ea135be28f3df57c82d7d73",
+    "game/stat_mental_rules.gd": "0b7e80e13477d0db17e07b6dcabd28169902c007ab56993d6c1b0f952dfc5931",
+    "game/stat_physiology.gd": "e3e0605b20da3feace72b626c2c88749a0bdca06b5cbdaccb8b30f6b7f00e9cd",
+    "game/stat_rules.gd": "f1a47d2fab431ea193ac96cf4b0def57962298fe3e381fd3e70844e3812a9030",
+    "game/stat_sources.gd": "6102c27faf917429ec4fad0ec6cde1bd63b5855cf4f6a4b764d4602a50bde52c",
+    "game/world.gd": "dc1021fb0befa2e45d67db34a883b55ecf7de8dd2b50a65e03adbe270101e4b7",
+    "main.tscn": "97c1cea7819fe941f54c7490b1e9c4ed58ac0a3e7b5f325960a7c73c671aaa13",
+    "project.godot": "0416d028efea6ccf0280f0036a8aa460f9f33c40aa9af3d45abe3fa55e15fa04"
+  }
+}

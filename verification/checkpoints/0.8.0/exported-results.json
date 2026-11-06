@@ -1,0 +1,213 @@
+{
+  "version": "0.8.0",
+  "runtime": "exported universal app; external assisted harnesses, compiled PCK gameplay resources",
+  "all_passed": true,
+  "suites": [
+    {
+      "suite": "companion_identity",
+      "passed": true,
+      "seconds": 5.8,
+      "checks": 1451,
+      "failures": 0
+    },
+    {
+      "suite": "essence_preservation",
+      "passed": true,
+      "seconds": 2.36,
+      "checks": 167,
+      "failures": 0
+    },
+    {
+      "suite": "progression_magic",
+      "passed": true,
+      "seconds": 2.19,
+      "checks": 127,
+      "failures": 0
+    },
+    {
+      "suite": "combat_rules",
+      "passed": true,
+      "seconds": 1.18,
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "suite": "reference",
+      "passed": true,
+      "seconds": 2.4,
+      "checks": 249,
+      "failures": 0
+    },
+    {
+      "suite": "magic_ui",
+      "passed": true,
+      "seconds": 1.88,
+      "checks": 90,
+      "failures": 0
+    },
+    {
+      "suite": "clock_progression",
+      "passed": true,
+      "seconds": 2.59,
+      "checks": 110,
+      "failures": 0
+    },
+    {
+      "suite": "expanded_essence",
+      "passed": true,
+      "seconds": 1.57,
+      "checks": 114,
+      "failures": 0
+    },
+    {
+      "suite": "racial_integration",
+      "passed": true,
+      "seconds": 1.08,
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "suite": "dungeon_width",
+      "passed": true,
+      "seconds": 7.02,
+      "checks": 406,
+      "failures": 0
+    },
+    {
+      "suite": "audio_lifecycle",
+      "passed": true,
+      "seconds": 0.67,
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "turn_safety",
+      "passed": true,
+      "seconds": 1.76,
+      "checks": 45,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_rules",
+      "passed": true,
+      "seconds": 0.46,
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_catalog",
+      "passed": true,
+      "seconds": 1.47,
+      "checks": 75,
+      "failures": 0
+    },
+    {
+      "suite": "beastman_progression",
+      "passed": true,
+      "seconds": 2.3,
+      "checks": 244,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_integration",
+      "passed": true,
+      "seconds": 3.16,
+      "checks": 221,
+      "failures": 0
+    },
+    {
+      "suite": "profession_rules",
+      "passed": true,
+      "seconds": 0.36,
+      "checks": 175,
+      "failures": 0
+    },
+    {
+      "suite": "profession_integration",
+      "passed": true,
+      "seconds": 1.97,
+      "checks": 223,
+      "failures": 0
+    },
+    {
+      "suite": "stat_catalog",
+      "passed": true,
+      "seconds": 0.68,
+      "checks": 518,
+      "failures": 0
+    },
+    {
+      "suite": "stat_rules",
+      "passed": true,
+      "seconds": 0.37,
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "suite": "stat_integration",
+      "passed": true,
+      "seconds": 1.87,
+      "checks": 121,
+      "failures": 0
+    },
+    {
+      "suite": "stat_combat_rules",
+      "passed": true,
+      "seconds": 0.48,
+      "checks": 160,
+      "failures": 0
+    },
+    {
+      "suite": "stat_physiology",
+      "passed": true,
+      "seconds": 0.37,
+      "checks": 170,
+      "failures": 0
+    },
+    {
+      "suite": "stat_mental_rules",
+      "passed": true,
+      "seconds": 0.36,
+      "checks": 192,
+      "failures": 0
+    },
+    {
+      "suite": "stat_expansion",
+      "passed": true,
+      "seconds": 2.91,
+      "checks": 112,
+      "failures": 0
+    },
+    {
+      "suite": "stat_senses_ui",
+      "passed": true,
+      "seconds": 1.06,
+      "checks": 4,
+      "failures": 0
+    },
+    {
+      "suite": "stat_indices",
+      "passed": true,
+      "seconds": 0.47,
+      "checks": 111,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_rules",
+      "passed": true,
+      "seconds": 1.07,
+      "checks": 62,
+      "failures": 0
+    },
+    {
+      "suite": "stat_remaining_integration",
+      "passed": true,
+      "seconds": 2.39,
+      "checks": 71,
+      "failures": 0
+    }
+  ],
+  "pck_sha256": "31ea968c80f9cc0f7d2158167d053ab161a7402204afcbf503efcc9279fbae39",
+  "executable_sha256": "d7f34244935c73b4c3d02b2ce2798f6358373b2f10981f7491d7a7c09386f94a",
+  "source_gameplay_hashes_match": true
+}

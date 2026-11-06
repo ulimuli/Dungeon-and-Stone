@@ -1,0 +1,346 @@
+{
+  "version": "0.12.0",
+  "runtime": "exported universal app; external assisted harnesses, compiled PCK gameplay resources",
+  "all_passed": true,
+  "suites": [
+    {
+      "suite": "companion_identity",
+      "passed": true,
+      "seconds": 9.16,
+      "checks": 1451,
+      "failures": 0
+    },
+    {
+      "suite": "essence_preservation",
+      "passed": true,
+      "seconds": 8.81,
+      "checks": 167,
+      "failures": 0
+    },
+    {
+      "suite": "progression_magic",
+      "passed": true,
+      "seconds": 9.76,
+      "checks": 127,
+      "failures": 0
+    },
+    {
+      "suite": "combat_rules",
+      "passed": true,
+      "seconds": 3.84,
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "suite": "reference",
+      "passed": true,
+      "seconds": 7.44,
+      "checks": 249,
+      "failures": 0
+    },
+    {
+      "suite": "magic_ui",
+      "passed": true,
+      "seconds": 3.55,
+      "checks": 90,
+      "failures": 0
+    },
+    {
+      "suite": "clock_progression",
+      "passed": true,
+      "seconds": 9.56,
+      "checks": 110,
+      "failures": 0
+    },
+    {
+      "suite": "expanded_essence",
+      "passed": true,
+      "seconds": 4.76,
+      "checks": 114,
+      "failures": 0
+    },
+    {
+      "suite": "racial_integration",
+      "passed": true,
+      "seconds": 3.32,
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "suite": "dungeon_width",
+      "passed": true,
+      "seconds": 15.11,
+      "checks": 406,
+      "failures": 0
+    },
+    {
+      "suite": "audio_lifecycle",
+      "passed": true,
+      "seconds": 1.02,
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "turn_safety",
+      "passed": true,
+      "seconds": 7.67,
+      "checks": 45,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_rules",
+      "passed": true,
+      "seconds": 1.04,
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_catalog",
+      "passed": true,
+      "seconds": 4.15,
+      "checks": 75,
+      "failures": 0
+    },
+    {
+      "suite": "beastman_progression",
+      "passed": true,
+      "seconds": 6.04,
+      "checks": 248,
+      "failures": 0
+    },
+    {
+      "suite": "numbered_integration",
+      "passed": true,
+      "seconds": 10.25,
+      "checks": 221,
+      "failures": 0
+    },
+    {
+      "suite": "profession_rules",
+      "passed": true,
+      "seconds": 0.83,
+      "checks": 175,
+      "failures": 0
+    },
+    {
+      "suite": "profession_integration",
+      "passed": true,
+      "seconds": 5.08,
+      "checks": 223,
+      "failures": 0
+    },
+    {
+      "suite": "stat_catalog",
+      "passed": true,
+      "seconds": 1.74,
+      "checks": 521,
+      "failures": 0
+    },
+    {
+      "suite": "stat_rules",
+      "passed": true,
+      "seconds": 0.91,
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "suite": "stat_integration",
+      "passed": true,
+      "seconds": 5.44,
+      "checks": 121,
+      "failures": 0
+    },
+    {
+      "suite": "stat_combat_rules",
+      "passed": true,
+      "seconds": 0.81,
+      "checks": 160,
+      "failures": 0
+    },
+    {
+      "suite": "stat_physiology",
+      "passed": true,
+      "seconds": 1.36,
+      "checks": 170,
+      "failures": 0
+    },
+    {
+      "suite": "stat_mental_rules",
+      "passed": true,
+      "seconds": 0.85,
+      "checks": 192,
+      "failures": 0
+    },
+    {
+      "suite": "stat_expansion",
+      "passed": true,
+      "seconds": 6.98,
+      "checks": 112,
+      "failures": 0
+    },
+    {
+      "suite": "stat_senses_ui",
+      "passed": true,
+      "seconds": 2.47,
+      "checks": 4,
+      "failures": 0
+    },
+    {
+      "suite": "stat_indices",
+      "passed": true,
+      "seconds": 0.92,
+      "checks": 111,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_rules",
+      "passed": true,
+      "seconds": 3.5,
+      "checks": 62,
+      "failures": 0
+    },
+    {
+      "suite": "stat_remaining_integration",
+      "passed": true,
+      "seconds": 6.13,
+      "checks": 71,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_stones",
+      "passed": true,
+      "seconds": 2.4,
+      "checks": 104,
+      "failures": 0
+    },
+    {
+      "suite": "spirit_stone_integration",
+      "passed": true,
+      "seconds": 5.65,
+      "checks": 138,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_catalog",
+      "passed": true,
+      "seconds": 0.81,
+      "checks": 289,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_rules",
+      "passed": true,
+      "seconds": 2.7,
+      "checks": 122,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_integration",
+      "passed": true,
+      "seconds": 6.46,
+      "checks": 319,
+      "failures": 0
+    },
+    {
+      "suite": "dragon_blessing_rules",
+      "passed": true,
+      "seconds": 0.84,
+      "checks": 279,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_ceremonies",
+      "passed": true,
+      "seconds": 10.25,
+      "checks": 194,
+      "failures": 0
+    },
+    {
+      "suite": "homeland_map",
+      "passed": true,
+      "seconds": 2.85,
+      "checks": 3260,
+      "failures": 0
+    },
+    {
+      "suite": "early_floor_content",
+      "passed": true,
+      "seconds": 0.93,
+      "checks": 313,
+      "failures": 0
+    },
+    {
+      "suite": "early_floor_world",
+      "passed": true,
+      "seconds": 22.71,
+      "checks": 4597,
+      "failures": 0
+    },
+    {
+      "suite": "early_monster_rules",
+      "passed": true,
+      "seconds": 1.01,
+      "checks": 136,
+      "failures": 0
+    },
+    {
+      "suite": "early_floor_integration",
+      "passed": true,
+      "seconds": 18.72,
+      "checks": 229,
+      "failures": 0
+    },
+    {
+      "suite": "early_monster_integration",
+      "passed": true,
+      "seconds": 13.07,
+      "checks": 141,
+      "failures": 0
+    },
+    {
+      "suite": "early_floor_ui",
+      "passed": true,
+      "seconds": 10.34,
+      "checks": 269,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_content",
+      "passed": true,
+      "seconds": 0.63,
+      "checks": 199,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_world",
+      "passed": true,
+      "seconds": 14.34,
+      "checks": 1173,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_rules",
+      "passed": true,
+      "seconds": 1.33,
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_integration",
+      "passed": true,
+      "seconds": 17.38,
+      "checks": 229,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_ui",
+      "passed": true,
+      "seconds": 9.47,
+      "checks": 109,
+      "failures": 0
+    }
+  ],
+  "pck_sha256": "bd616e4080e278f33ce2016de6e2e18273076bb929e77fc529ee0d310a34f413",
+  "executable_sha256": "349aee30e0330fa6a0eb78ba3828313e1525ea66cd12ecc6591e3863e21caefd",
+  "source_gameplay_hashes_match": true
+}

@@ -1,0 +1,44 @@
+name: Windows playable build
+on:
+  push:
+    branches: [main]
+    paths: ['game/**', 'assets/**', 'project.godot', 'main.tscn', 'export_presets.cfg', 'scripts/**', 'tests/**', '.github/workflows/windows-build.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-verify:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download official Godot4.5.1 editor and verified template
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force .cache | Out-Null
+          curl.exe -L --fail --retry 2 -o .cache/editor.zip https://github.com/godotengine/godot-builds/releases/download/4.5.1-stable/Godot_v4.5.1-stable_win64.exe.zip
+          if ($LASTEXITCODE -ne 0) { throw 'Editor download failed' }
+          Expand-Archive .cache/editor.zip .cache/editor
+          python scripts/fetch_windows_template.py --output .cache/windows_release_x86_64.exe
+          if ($LASTEXITCODE -ne 0) { throw 'Template verification failed' }
+      - name: Build offline Windows package
+        shell: pwsh
+        run: |
+          $godot = (Resolve-Path .cache/editor/Godot_v4.5.1-stable_win64_console.exe).Path
+          python scripts/build_windows.py --godot $godot --template .cache/windows_release_x86_64.exe --output builds | Tee-Object builds-result.txt
+          if ($LASTEXITCODE -ne 0) { throw 'Export failed' }
+      - name: Verify actual compiled gameplay on Windows
+        shell: pwsh
+        run: |
+          $record = Get-Content builds-result.txt -Raw | ConvertFrom-Json
+          python scripts/verify_windows.py --package $record.package
+          if ($LASTEXITCODE -ne 0) { throw 'Compiled Windows checks failed' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Dungeon-and-Stone-Windows
+          path: |
+            builds/Dungeon-and-Stone-Windows.zip
+            builds/Dungeon-and-Stone-Windows-BUILD_INFO.json
+            verification/windows-results.json

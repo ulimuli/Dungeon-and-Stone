@@ -1,0 +1,35 @@
+{
+  "version": "0.10.0",
+  "extraction_directory": "/private/tmp/dungeon-stone-clean-010-faj86a56",
+  "archive_crc_verified": true,
+  "archive_omits_caches_git_credentials": true,
+  "runs": [
+    {
+      "name": "import",
+      "passed": true,
+      "seconds": 4.32
+    },
+    {
+      "name": "startup",
+      "passed": true,
+      "seconds": 0.8
+    },
+    {
+      "name": "homeland_integration",
+      "passed": true,
+      "seconds": 1.77,
+      "checks": 319,
+      "failures": 0
+    },
+    {
+      "name": "homeland_ceremonies",
+      "passed": true,
+      "seconds": 2.56,
+      "checks": 194,
+      "failures": 0
+    }
+  ],
+  "source_gameplay_hashes_match": true,
+  "all_passed": true,
+  "scope": "Fresh cache-free source import/startup plus513 actual homeland/ceremony integration checks. Final repack updates documentation/verification metadata only; gameplay unchanged."
+}

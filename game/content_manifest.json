@@ -1,0 +1,19 @@
+{
+	"backgrounds": 1,
+	"companions": 12,
+	"events": 0,
+	"institutions": 2,
+	"items": 29,
+	"numeric_balance": "provisional",
+	"obtainable_essences": 7,
+	"playable_regions": 9,
+	"races": 6,
+	"recipes": 0,
+	"research_catalog": {
+		"areas": 5,
+		"essences": 9
+	},
+	"schema": 1,
+	"spawned_enemy_species": 35,
+	"title": "Dungeon & Stone"
+}

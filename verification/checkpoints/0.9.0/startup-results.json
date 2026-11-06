@@ -1,0 +1,26 @@
+{
+  "version": "0.9.0",
+  "runtime": "/private/tmp/dungeon-and-stone-build.ju5bgA/package/Dungeon & Stone.app",
+  "ordinary_graphical_startup": {
+    "frames": 15,
+    "renderer": "Apple M1 OpenGL Compatibility",
+    "script_error": false,
+    "objectdb_warning": true,
+    "unresolved_shutdown_warning": [
+      "AudioStreamWAV",
+      "AudioStreamPlaybackWAV"
+    ],
+    "orphan_master_string": true
+  },
+  "movie_maker_capture": {
+    "frames": 3,
+    "rendered": true,
+    "script_error": false
+  },
+  "scope": "Actual packaged startup and rendered title; not human expedition playtesting. Short ordinary shutdown reproduced the WAV/playback warning as well as capture; unresolved.",
+  "binary_architectures": [
+    "x86_64",
+    "arm64"
+  ],
+  "executed_architecture": "arm64"
+}

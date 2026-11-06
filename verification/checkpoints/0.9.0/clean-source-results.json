@@ -1,0 +1,13 @@
+{
+  "version": "0.9.0",
+  "archive_extracted_without_cache": true,
+  "editor_import_passed": true,
+  "headless_startup_frames": 12,
+  "headless_startup_passed": true,
+  "integration_suite": "stat_remaining_integration",
+  "integration_checks": 71,
+  "integration_failures": 0,
+  "gameplay_sources_match_working_copy": true,
+  "gameplay_file_count": 31,
+  "scope": "Clean temporary extraction of distributed source, fresh Godot import, startup and assisted stat integration; no normal player saves written."
+}

@@ -1,0 +1,32 @@
+{
+  "version": "0.12.0",
+  "all_passed": true,
+  "gameplay_hashes_match": true,
+  "clean_path": "/var/folders/vr/krqtyst57kqcqf6t6zy10xvw0000gn/T/dungeon-clean-0.12-6rm4t_md/dungeon-and-stone",
+  "scope": "Clean extracted source import/startup and assisted third-floor checks; not human campaign completion",
+  "steps": [
+    {
+      "step": "import",
+      "passed": true
+    },
+    {
+      "step": "startup",
+      "passed": true
+    },
+    {
+      "step": "content",
+      "passed": true,
+      "checks": 280
+    },
+    {
+      "step": "third_floor_rules",
+      "passed": true,
+      "checks": 93
+    },
+    {
+      "step": "third_floor_integration",
+      "passed": true,
+      "checks": 229
+    }
+  ]
+}

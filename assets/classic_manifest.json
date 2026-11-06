@@ -1,0 +1,231 @@
+{
+  "title": "Dungeon & Stone",
+  "license": "CC0-1.0, original programmatic game artwork",
+  "filtering": "nearest, integer scaling",
+  "assets": {
+    "classic_armor": {
+      "file": "classic_armor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_axe": {
+      "file": "classic_axe.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_bag": {
+      "file": "classic_bag.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_bow": {
+      "file": "classic_bow.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_coin": {
+      "file": "classic_coin.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_cursor": {
+      "file": "classic_cursor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_essence": {
+      "file": "classic_essence.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor": {
+      "file": "classic_floor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_1": {
+      "file": "classic_floor_1.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_2": {
+      "file": "classic_floor_2.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_3": {
+      "file": "classic_floor_3.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_fog": {
+      "file": "classic_fog.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_food": {
+      "file": "classic_food.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_frame": {
+      "file": "classic_frame.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_key": {
+      "file": "classic_key.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_blade_wolf": {
+      "file": "classic_monster_blade_wolf.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_ghoul": {
+      "file": "classic_monster_ghoul.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_gnome": {
+      "file": "classic_monster_gnome.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin": {
+      "file": "classic_monster_goblin.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin_archer": {
+      "file": "classic_monster_goblin_archer.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin_swordsman": {
+      "file": "classic_monster_goblin_swordsman.png",
+      "type": "image",
+      "width": 32,
+      "height": 32,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_skeleton": {
+      "file": "classic_monster_skeleton.png",
+      "type": "image",
+      "width": 32,
+      "height": 32,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_potion": {
+      "file": "classic_potion.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_scroll": {
+      "file": "classic_scroll.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_staff": {
+      "file": "classic_staff.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_sword": {
+      "file": "classic_sword.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_target": {
+      "file": "classic_target.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_wall": {
+      "file": "classic_wall.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    }
+  }
+}

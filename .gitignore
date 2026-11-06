@@ -1,0 +1,22 @@
+# Godot editor/import cache and private export credentials
+.godot/
+.export_credentials.cfg
+
+# Local build output and downloaded engine/template files
+builds/
+.cache/
+*.app/
+*.dmg
+*.zip
+*.tpz
+
+# Generated logs, editor/OS files and local saves
+*.log
+*.tmp
+*.bak
+.DS_Store
+__pycache__/
+*.pyc
+saves/
+settings.json
+screenshots/*.import

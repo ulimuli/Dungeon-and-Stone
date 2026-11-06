@@ -1,0 +1,109 @@
+{
+  "frost_spirit_ring": {
+    "number": 9425,
+    "name": "Ring of the Frost Spirit",
+    "slot": "charm",
+    "kind": "armor",
+    "price": 1500,
+    "weight": 0.1,
+    "market_limit": 1,
+    "desc": "Seals one essence’s skills, keeping its attributes. A Beastman can break it to awaken Skadia; all worn equipment is destroyed.",
+    "passives": [
+      {
+        "op": "seal_essence"
+      }
+    ],
+    "ritual": {
+      "op": "awaken_skadia",
+      "race": "beastman",
+      "destroy_equipped": true
+    },
+    "reference_urls": [
+      "https://surviving-the-game-as-a-barbarian.fandom.com/wiki/Numbered_Items",
+      "https://noveldex.io/series/novel/surviving-the-game-as-a-barbarian/chapter/60"
+    ],
+    "estimates": "Compressed price1,500 versus novel market quote1,500,000; one consignment. Unknown essence attribute bonuses are not invented."
+  },
+  "guardians_braces": {
+    "number": 3112,
+    "name": "Guardian’s Braces",
+    "slot": "charm",
+    "kind": "armor",
+    "price": 50000,
+    "weight": 0.5,
+    "market_limit": 1,
+    "desc": "Reduces incoming damage by5%. Activate to repel enemies and cleanse/protect nearby allies from harmful statuses. Dwarf protection lasts1.5× as long.",
+    "passives": [
+      {
+        "op": "damage_reduction",
+        "percent": 5
+      }
+    ],
+    "active": {
+      "name": "Guardian’s Protection",
+      "ap": 2,
+      "cooldown": 6,
+      "base_duration": 2,
+      "max_duration": 6,
+      "charge_per_round": 10,
+      "dwarf_duration_multiplier": 1.5,
+      "effects": [
+        {
+          "op": "cleanse",
+          "target": "allies",
+          "radius": 3
+        },
+        {
+          "op": "status_immunity",
+          "target": "allies",
+          "radius": 3
+        },
+        {
+          "op": "knockback",
+          "target": "enemies",
+          "radius": 3,
+          "distance": 2
+        }
+      ]
+    },
+    "reference_urls": [
+      "https://hennoveltranslations.com/archives/episodes/stgb-episode-58",
+      "https://noveldex.io/series/novel/surviving-the-game-as-a-barbarian/chapter/48"
+    ],
+    "estimates": "Compressed price50,000 versus old novel market quote≈50million; one consignment. Charge conversion/reset, radius, round duration and cooldown are estimates. Status immunity does not prevent damage."
+  },
+  "snowfield_club": {
+    "number": 9712,
+    "name": "Club of the Snowfield",
+    "slot": "weapon",
+    "kind": "weapon",
+    "price": 1800,
+    "weight": 3.0,
+    "market_limit": 1,
+    "str_req": 0,
+    "agi_req": 0,
+    "desc": "A blunt Numbered weapon that adds frost damage to normal attacks.",
+    "passives": [
+      {
+        "op": "extra_weapon_damage",
+        "damage_type": "cold",
+        "amount": 5
+      }
+    ],
+    "reference_urls": [
+      "https://hennoveltranslations.com/archives/episodes/stgb-episode-587"
+    ],
+    "estimates": "Price, weight, ordinary weapon statistics and added frost magnitude are estimates. The novel verifies the additional frost effect, not these coefficients.",
+    "modifiers": [
+      {
+        "stat": "attack",
+        "op": "add",
+        "value": 4
+      }
+    ],
+    "base_stats": {
+      "attack_range": 1
+    },
+    "weapon_style": "blunt"
+  }
+}

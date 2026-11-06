@@ -1,0 +1,87 @@
+{
+  "version": "0.12.0",
+  "runtime": "actual Windows x86_64 EXE/PCK via Wine; not native Windows",
+  "all_passed": true,
+  "source_gameplay_hashes_match": true,
+  "exe_sha256": "78ccc576e8f8bffd7ef6ad6f36ebd72a41e609a1052225a55b3407c96ea84065",
+  "pck_sha256": "bd616e4080e278f33ce2016de6e2e18273076bb929e77fc529ee0d310a34f413",
+  "suites": [
+    {
+      "suite": "content",
+      "passed": true,
+      "seconds": 6.67,
+      "checks": 280,
+      "failures": 0
+    },
+    {
+      "suite": "reference",
+      "passed": true,
+      "seconds": 9.27,
+      "checks": 249,
+      "failures": 0
+    },
+    {
+      "suite": "combat_rules",
+      "passed": true,
+      "seconds": 8.45,
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "suite": "clock_progression",
+      "passed": true,
+      "seconds": 15.05,
+      "checks": 110,
+      "failures": 0
+    },
+    {
+      "suite": "save_validation",
+      "passed": true,
+      "seconds": 50.23,
+      "checks": 743,
+      "failures": 0
+    },
+    {
+      "suite": "early_floor_integration",
+      "passed": true,
+      "seconds": 20.53,
+      "checks": 229,
+      "failures": 0
+    },
+    {
+      "suite": "early_monster_integration",
+      "passed": true,
+      "seconds": 15.08,
+      "checks": 141,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_content",
+      "passed": true,
+      "seconds": 10.44,
+      "checks": 199,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_rules",
+      "passed": true,
+      "seconds": 10.54,
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_integration",
+      "passed": true,
+      "seconds": 19.95,
+      "checks": 229,
+      "failures": 0
+    },
+    {
+      "suite": "third_floor_ui",
+      "passed": true,
+      "seconds": 16.02,
+      "checks": 109,
+      "failures": 0
+    }
+  ]
+}

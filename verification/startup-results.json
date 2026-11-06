@@ -1,0 +1,8 @@
+{
+  "version": "0.12.0",
+  "macOS_packaged_title_rendered": true,
+  "macOS_startup_passed": true,
+  "Windows_Wine_startup_passed": true,
+  "native_Windows_verified": false,
+  "scope": "Actual compiled startup and local title frame; automated screenshot inspection, not human campaign playthrough"
+}

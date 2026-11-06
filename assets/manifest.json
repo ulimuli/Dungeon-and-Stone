@@ -1,0 +1,559 @@
+{
+  "title": "Dungeon & Stone",
+  "schema": 1,
+  "artwork": "Original provisional pixel art; not copied reference-media assets",
+  "runtime_characters": "game/character_art.gd generates native64px portraits and32px world sprites deterministically from saved appearance data",
+  "fonts": {
+    "vt323.ttf": {
+      "source": "https://github.com/google/fonts/tree/main/ofl/vt323",
+      "license": "SIL-OFL-1.1",
+      "license_file": "VT323-OFL.txt"
+    },
+    "pixelify_sans.ttf": {
+      "source": "https://github.com/google/fonts/tree/main/ofl/pixelifysans",
+      "license": "SIL-OFL-1.1",
+      "license_file": "PixelifySans-OFL.txt"
+    }
+  },
+  "assets": {
+    "ambient_city": {
+      "file": "ambient_city.wav",
+      "type": "audio",
+      "seconds": 16.0,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "ambient_dungeon": {
+      "file": "ambient_dungeon.wav",
+      "type": "audio",
+      "seconds": 16.0,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "book": {
+      "file": "book.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "camp": {
+      "file": "camp.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "chest": {
+      "file": "chest.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_armor": {
+      "file": "classic_armor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_axe": {
+      "file": "classic_axe.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_bag": {
+      "file": "classic_bag.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_bow": {
+      "file": "classic_bow.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_coin": {
+      "file": "classic_coin.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_cursor": {
+      "file": "classic_cursor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_essence": {
+      "file": "classic_essence.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor": {
+      "file": "classic_floor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_1": {
+      "file": "classic_floor_1.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_2": {
+      "file": "classic_floor_2.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_floor_3": {
+      "file": "classic_floor_3.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_fog": {
+      "file": "classic_fog.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_food": {
+      "file": "classic_food.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_frame": {
+      "file": "classic_frame.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_key": {
+      "file": "classic_key.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_blade_wolf": {
+      "file": "classic_monster_blade_wolf.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_ghoul": {
+      "file": "classic_monster_ghoul.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_gnome": {
+      "file": "classic_monster_gnome.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin": {
+      "file": "classic_monster_goblin.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin_archer": {
+      "file": "classic_monster_goblin_archer.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_goblin_swordsman": {
+      "file": "classic_monster_goblin_swordsman.png",
+      "type": "image",
+      "width": 32,
+      "height": 32,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_monster_skeleton": {
+      "file": "classic_monster_skeleton.png",
+      "type": "image",
+      "width": 32,
+      "height": 32,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_potion": {
+      "file": "classic_potion.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_scroll": {
+      "file": "classic_scroll.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_staff": {
+      "file": "classic_staff.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_sword": {
+      "file": "classic_sword.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_target": {
+      "file": "classic_target.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "classic_wall": {
+      "file": "classic_wall.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "coin": {
+      "file": "coin.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "door": {
+      "file": "door.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "essence": {
+      "file": "essence.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "food": {
+      "file": "food.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "gem": {
+      "file": "gem.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "grave": {
+      "file": "grave.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "healing_potion": {
+      "file": "healing_potion.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "icon": {
+      "file": "icon.png",
+      "type": "image",
+      "width": 128,
+      "height": 128,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "key": {
+      "file": "key.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "material": {
+      "file": "material.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "potion": {
+      "file": "potion.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "sfx_blocked": {
+      "file": "sfx_blocked.wav",
+      "type": "audio",
+      "seconds": 0.22,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_cast": {
+      "file": "sfx_cast.wav",
+      "type": "audio",
+      "seconds": 0.65,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_death": {
+      "file": "sfx_death.wav",
+      "type": "audio",
+      "seconds": 0.8,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_heal": {
+      "file": "sfx_heal.wav",
+      "type": "audio",
+      "seconds": 0.75,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_hit": {
+      "file": "sfx_hit.wav",
+      "type": "audio",
+      "seconds": 0.24,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_loot": {
+      "file": "sfx_loot.wav",
+      "type": "audio",
+      "seconds": 0.54,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_move": {
+      "file": "sfx_move.wav",
+      "type": "audio",
+      "seconds": 0.095,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_step": {
+      "file": "sfx_step.wav",
+      "type": "audio",
+      "seconds": 0.11,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "sfx_ui": {
+      "file": "sfx_ui.wav",
+      "type": "audio",
+      "seconds": 0.08,
+      "channels": 2,
+      "sample_rate": 22050,
+      "license": "CC0-1.0",
+      "provenance": "Original synthesized PCM sound"
+    },
+    "shield": {
+      "file": "shield.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "stairs": {
+      "file": "stairs.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "sword": {
+      "file": "sword.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_floor": {
+      "file": "tile_floor.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_floor_1": {
+      "file": "tile_floor_1.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_floor_2": {
+      "file": "tile_floor_2.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_floor_3": {
+      "file": "tile_floor_3.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_hazard": {
+      "file": "tile_hazard.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_wall": {
+      "file": "tile_wall.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "tile_water": {
+      "file": "tile_water.png",
+      "type": "image",
+      "width": 16,
+      "height": 16,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "title_background": {
+      "file": "title_background.png",
+      "type": "image",
+      "width": 640,
+      "height": 360,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "torch": {
+      "file": "torch.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    },
+    "trap": {
+      "file": "trap.png",
+      "type": "image",
+      "width": 24,
+      "height": 24,
+      "license": "CC0-1.0",
+      "provenance": "Original programmatic pixel artwork"
+    }
+  }
+}
